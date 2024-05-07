@@ -3,10 +3,16 @@ const platform = ["github", "linkedin", "twitter"];
 const username = "rjantos";
 const lnUsername = "rudolfjantos";
 
+import Social from './Social.astro';
+
 const contactEmail = "rudolf.jantos@gmail.com";
 ---
 
 <footer>
-    <p>learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
-    <p>Follow me on: <a href={`https://www.${platform[1]}.com/in/${lnUsername}`}>Linkedin</a> / <a href={`https://www.${platform[2]}.com/${username}`}>X</a></p>
+    <!-- <p>learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+    <p>Follow me on: <a href={`https://www.${platform[1]}.com/in/${lnUsername}`}>Linkedin</a> / <a href={`https://www.${platform[2]}.com/${username}`}>X</a></p> -->
+    <Social platform="twitter" username="rjantos" />
+    <Social platform="github" username="rjantos" />
+    <Social platform="youtube" username="rjantos" />
+
 </footer>
